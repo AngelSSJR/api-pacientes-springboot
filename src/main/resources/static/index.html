@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport"
+		content="width=divice-width, initial-scale=1.0">
+		<title>Gestión de Pacientes</title>
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	
+	<body>
+		<div class="container">
+			<h1>Clinica - Gestion de Pacientes</h1>
+			
+			<form id="pacienteForm">
+				<input type="text" id="nombre" placeholder="Nombre completo" required>
+				
+				<input type="number" id="edad" placeholder="Edad" required>
+				
+				<input type="email" id="correo" placeholder="Correo" required>
+				
+				<input type="text" id="telefono" placeholder="Telefono" required>
+				
+				<button type="submit">Guardar Paciente</button>
+			</form>
+			
+			<hr>
+			
+			<h2>Lista de Pacientes</h2>
+			
+			<table id="pacientesTable">
+				<thead>
+					<tr>
+						<th>ID</th>
+						<th>Nombre</th>
+						<th>Edad</th>
+						<th>Correo</th>
+						<th>Telefono</th>
+						<th>Acciones</th>
+					</tr>
+				</thead>
+				<tbody>
+					
+				</tbody>
+			</table>
+		</div>
+		
+		<script src="js/app.js"></script>
+	</body>
+</html>
