@@ -29,7 +29,6 @@ public class PacienteServiceImpl implements PacienteService {
         pacienteRepository.deleteById(id); 
     }
 
-    // --- NUEVOS MÉTODOS ---
 
     @Override
     public Paciente obtenerPacientePorId(Long id) {
@@ -39,16 +38,14 @@ public class PacienteServiceImpl implements PacienteService {
 
     @Override
     public Paciente actualizarPaciente(Long id, Paciente paciente) {
-        // Primero buscamos si existe
+        
         Paciente pacienteExistente = obtenerPacientePorId(id);
         
-        // Actualizamos los campos
         pacienteExistente.setNombre(paciente.getNombre());
         pacienteExistente.setEdad(paciente.getEdad());
         pacienteExistente.setCorreo(paciente.getCorreo());
         pacienteExistente.setTelefono(paciente.getTelefono());
         
-        // Guardamos los cambios
         return pacienteRepository.save(pacienteExistente);
     }
 }

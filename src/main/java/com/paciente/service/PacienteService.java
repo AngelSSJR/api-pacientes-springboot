@@ -8,7 +8,7 @@ public interface PacienteService {
     Paciente crearPaciente(Paciente paciente);
     void eliminarPaciente(Long id);
     
-    // Nuevos métodos necesarios para el Controller
+    
     Paciente obtenerPacientePorId(Long id);
     Paciente actualizarPaciente(Long id, Paciente paciente);
 }

@@ -28,7 +28,6 @@ public class SecurityConfig {
                 .requestMatchers("/api/auth/**").permitAll()
                 .requestMatchers("/v3/api-docs/**", "/swagger-ui/**", "/swagger-ui.html").permitAll()
                 
-                // ¡MODIFICADO! Ahora permite archivos .js y .css sueltos en la raíz, además de las carpetas
                 .requestMatchers("/", "/index.html", "/*.js", "/*.css", "/js/**", "/css/**", "/favicon.ico").permitAll()
                 
                 .anyRequest().authenticated()

@@ -1,4 +1,4 @@
-localStorage.setItem('jwtToken', 'eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTc4MDc2NjA2NCwiZXhwIjoxNzgwODUyNDY0fQ.8ot5Ocbp95ZE4gHd_vTjLvOxbjRETLEEXsUL8bySLdA');
+localStorage.setItem('jwtToken', 'eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTc4MDk3MDYxMCwiZXhwIjoxNzgxMDU3MDEwfQ.DGt5x5Ub9BPZlVdsLqDg--ue2cQye076lUPe9c04kg4');
 const API_URL = '/api/pacientes';
 
 // Función auxiliar para obtener el token guardado en el navegador

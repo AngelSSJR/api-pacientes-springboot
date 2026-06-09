@@ -31,7 +31,7 @@ public class AuthController {
         if (usuarioOpt.isPresent() && usuarioOpt.get().getPassword().equals(request.getPassword())) {
             
             String token = jwtUtil.generarToken(request.getUsername());
-            return ResponseEntity.ok(token); // Entregamos el token
+            return ResponseEntity.ok(token); 
         }
         
         

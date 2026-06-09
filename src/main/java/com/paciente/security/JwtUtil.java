@@ -12,7 +12,6 @@ import java.util.Date;
 @Component
 public class JwtUtil {
 
-    // ¡NUEVO! Clave estática: Debe tener al menos 32 caracteres por seguridad.
     private static final String SECRET_STRING = "MiClaveSecretaSuperSeguraParaSpringSecurity123456789";
     private static final Key SECRET_KEY = Keys.hmacShaKeyFor(SECRET_STRING.getBytes());
 

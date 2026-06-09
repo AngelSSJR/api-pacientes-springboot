@@ -17,7 +17,6 @@ public class PacienteController {
 	
 	private final PacienteService pacienteService;
 	
-	// Usamos tu estilo de inyección por constructor
 	public PacienteController(PacienteService pacienteService) {
 		this.pacienteService = pacienteService;
 	}
